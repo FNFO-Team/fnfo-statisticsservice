@@ -9,7 +9,7 @@ export const errorMiddleware = (
   res: Response,
   _next: NextFunction
 ) => {
-  console.error("❌ Unhandled error:", err);
+  console.error("Unhandled error:", err);
 
   return res.status(500).json({
     message: "Internal server error",

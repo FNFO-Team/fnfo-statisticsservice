@@ -12,10 +12,10 @@ async function startServer() {
     await connectDatabase();
 
     app.listen(PORT, () => {
-      console.log(`📊 StatisticsService running on port ${PORT}`);
+      console.log(`StatisticsService running on port ${PORT}`);
     });
   } catch (error) {
-    console.error("❌ Failed to start StatisticsService", error);
+    console.error("Failed to start StatisticsService", error);
     process.exit(1);
   }
 }
